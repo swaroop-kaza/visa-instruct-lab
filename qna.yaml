@@ -1,0 +1,82 @@
+version: 2
+task_description: 'Answer based on the query : '
+created_by: diwakar
+domain: payments
+seed_examples:
+  - question: 'What are the requirements for the Goal - Build and Maintain a Secure Network and Systems control'
+
+    answer: '1. Install and maintain a firewall configuration to protect cardholder\
+      \ data agents. \n2. Do not use vendor-supplied defaults for system passwords and\
+      \ other security parameters Protect Cardholder Data.\n\n3. Protect stored cardholder data\
+      \ available agents with definitions to describe the purpose of each.\n\nFlowRepairAgent:\n'
+  - question: 'What are the three ongoing steps for adhering to the PCI DSS: '
+    answer: 'There are three ongoing steps for adhering to the PCI DSS: Assess \
+      \ identifying all locations of cardholder data,\
+      \ taking an inventory of your IT assets and business\
+      \ processes for payment card processing and analyzing
+      \ them for vulnerabilities that could expose cardholder data.\
+      \ Repair — fixing identified vulnerabilities,\
+      \ securely removing any unnecessary cardholder data storage,\
+      \ and implementing secure business processes.\
+      \ Report — documenting assessment and remediation details,\
+      \ and submitting compliance reports to the acquiring bank\'
+  - question: 'What are the steps for processes for compliance ?'
+    answer: 'Depending on an entity’s classification or risk level \
+      \ (determined by the individual payment card brands), \
+      \ processes for compliance usually follow these steps: \
+      \ 1. Scope – determine which system components and networks are in scope for PCI DSS \
+      \ 2. Assess – examine the compliance of system components in scope \
+      \ following the testing procedures for each PCI DSS requirement \
+      \ 3. Report – assessor and/or entity completes required documentation \
+      \ (e.g. Self-Assessment Questionnaire (SAQ) or Report on Compliance (ROC)), \
+      \ including documentation of all compensating controls \
+      \ 4. Attest – complete the appropriate Attestation of Compliance (AOC) \
+      \ 5. Submit – submit the SAQ, ROC, AOC and other requested supporting \
+      \documentation such as ASV scan reports to the acquirer (for merchants) \
+      \or to the payment brand/requestor (for service providers) \
+      \ 6. Remediate – if required, perform remediation to address requirements \
+      \ that are not in place, and provide an updated report'
+  - question: 'what is the role of QSA?'
+    answer: 'The QSA will: • Verify all technical information given by merchant or service provider • \
+      \ Use independent judgment to confirm the standard has been met \
+      \ • Provide support and guidance during the compliance process \
+     \ • Be onsite for the duration of the assessment as required \
+     \ • Adhere to the PCI DSS Security Assessment Procedures •\
+     \ Validate the scope of the assessment • Evaluate compensating controls • Produce the final report'
+  - question: 'What is PCI ?'
+    answer: 'payment card industry'
+  - question: 'Why do criminals target merchants in the digital age?'
+    answer: 'Criminals target merchants in the digital age because they are where the money is,
+     just like Willie Sutton robbed banks in the 20th century.
+     Merchants are a key part of payment card transactions and
+     processing systems, making them a prime target for financial fraud.
+     Occasionally, lax security by some merchants enables criminals to
+     easily steal and use personal consumer financial information from
+     payment card transactions and processing systems, which is a serious problem.
+     Compliance with the PCI DSS helps to alleviate these vulnerabilities
+     and protect cardholder data.'
+  - question: 'What is the purpose of the PCI DSS Quick Reference Guide?'
+    answer: 'The purpose of the PCI DSS Quick Reference Guide is to help you understand how
+      the PCI DSS can help protect your payment card transaction environment
+      and how to apply it.
+      It outlines the three ongoing steps for adhering to the PCI DSS: Assess, Repair, and Report,
+      and explains that the PCI DSS follows common-sense steps that mirror security best practices
+      and applies globally to all entities that store, process or transmit
+      cardholder data and/or sensitive authentication data.'
+  - question: 'Who is responsible for managing the PCI Security Standards?'
+    answer: 'The PCI Security Standards Council (PCI SSC) is responsible for managing
+      the PCI Security Standards,
+      while compliance with the PCI set of standards is enforced by
+      the founding members of the Council: American Express, Discover
+      Financial Services, JCB, MasterCard and Visa Inc.'
+  - question: 'What is the scope of the PCI DSS?'
+    answer: 'The PCI DSS applies to all entities that store,
+      process, and/or transmit cardholder data. It covers technical and operational
+      system components included in or connected to cardholder data.
+      If you accept or process payment cards, PCI DSS applies to you.'
+
+document:
+  repo: git@github.ibm.com:Sunaina-Saxena/Instruct_lab_demo.git
+  commit: d96b9ce
+  patterns:
+    - output.md
