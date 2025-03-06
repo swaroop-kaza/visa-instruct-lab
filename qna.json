@@ -4,7 +4,7 @@
     "value": {
       "qna": {
         "version": 2,
-        "created_by": "byom_user3@techzone.ibm.com",
+        "created_by": "swaroop-kaza",
         "task_description": "Answer based on the query : ",
         "seed_examples": [
           {
