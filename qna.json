@@ -1,0 +1,45 @@
+[{
+    "op": "add",
+    "path": "/taxonomy_tree/compositional_skills/grounded/linguistics/rhyming_words",
+    "value": {
+      "qna": {
+        "version": 2,
+        "created_by": "byom_user3@techzone.ibm.com",
+        "task_description": "Answer based on the query : ",
+        "seed_examples": [
+          {
+            "answer": "What are the requirements for the Goal - Build and Maintain a Secure Network and Systems control",
+            "question": "1. Install and maintain a firewall configuration to protect cardholder\\ data agents. \n2. Do not use vendor-supplied defaults for system passwords and\\ other security parameters Protect Cardholder Data.\n\n3. Protect stored cardholder data\\ available agents with definitions to describe the purpose of each.\n\nFlowRepairAgent:\n"
+          },
+          {
+            "answer": "What are the three ongoing steps for adhering to the PCI DSS: ",
+            "question": "There are three ongoing steps for adhering to the PCI DSS: Assess identifying all locations of cardholder data,taking an inventory of your IT assets and business processes for payment card processing and analyzing them for vulnerabilities that could expose cardholder data. Repair — fixing identified vulnerabilities,securely removing any unnecessary cardholder data storage, and implementing secure business processes. Report — documenting assessment and remediation details, and submitting compliance reports to the acquiring bank"
+          },
+          {
+            "question": "What is the role of QSA?",
+            "answer": "The QSA will: \n• Verify all technical information given by merchant or service provider \n• Use independent judgment to confirm the standard has been met \n• Provide support and guidance during the compliance process \n• Be onsite for the duration of the assessment as required \n• Adhere to the PCI DSS Security Assessment Procedures \n• Validate the scope of the assessment \n• Evaluate compensating controls \n• Produce the final report"
+          },
+          {
+            "question": "What is PCI?",
+            "answer": "Payment Card Industry"
+          },
+          {
+            "question": "Why do criminals target merchants in the digital age?",
+            "answer": "Criminals target merchants in the digital age because they are where the money is, just like Willie Sutton robbed banks in the 20th century. Merchants are a key part of payment card transactions and processing systems, making them a prime target for financial fraud. Occasionally, lax security by some merchants enables criminals to easily steal and use personal consumer financial information from payment card transactions and processing systems, which is a serious problem. Compliance with the PCI DSS helps to alleviate these vulnerabilities and protect cardholder data."
+          },
+          {
+            "question": "What is the purpose of the PCI DSS Quick Reference Guide?",
+            "answer": "The purpose of the PCI DSS Quick Reference Guide is to help you understand how the PCI DSS can help protect your payment card transaction environment and how to apply it. It outlines the three ongoing steps for adhering to the PCI DSS: Assess, Repair, and Report, and explains that the PCI DSS follows common-sense steps that mirror security best practices and applies globally to all entities that store, process or transmit cardholder data and/or sensitive authentication data."
+          },
+          {
+            "question": "Who is responsible for managing the PCI Security Standards?",
+            "answer": "The PCI Security Standards Council (PCI SSC) is responsible for managing the PCI Security Standards, while compliance with the PCI set of standards is enforced by the founding members of the Council: American Express, Discover Financial Services, JCB, MasterCard and Visa Inc."
+          },
+          {
+            "question": "What is the scope of the PCI DSS?",
+            "answer": "The PCI DSS applies to all entities that store, process, and/or transmit cardholder data. It covers technical and operational system components included in or connected to cardholder data. If you accept or process payment cards, PCI DSS applies to you."
+          }
+        ]
+      }
+    }
+}]
