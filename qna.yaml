@@ -276,6 +276,6 @@ document_outline: |
   Information about financial domain.
 document:
   repo: git@github.com:swaroop-kaza/visa-instruct-lab.git
-  commit: 891d632
+  commit: 18fa610
   patterns:
     - output.md
