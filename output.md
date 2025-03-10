@@ -212,15 +212,15 @@ PCI DSS is the global data security standard adopted by the payment card brands 
 
 
 
-| Goals | PCI DSS Requirements |
-| --- | --- |
-| Build and Maintain a Secure Network and Systems | * 1. Install and maintain a firewall configuration to protect cardholder data * 2. Do not use vendor-supplied defaults for system passwords and other security parameters |
-| Protect Cardholder Data | * 3. Protect stored cardholder data * 4. Encrypt transmission of cardholder data across open, public networks |
-| Maintain a Vulnerability Management Program | 5. all systems against malware and regularly update software or programs |
-| Implement Strong Control Measures | Protect anti- virus * 6. Develop and maintain secure systems and applications |
-| Access | * 7. Restrict access to cardholder data by business need to know * 8. Identify and authenticate access to system components * 9. Restrict physical access to cardholder data |
-| Regularly Monitor and Test Networks | 10. Track and monitor all access to network resources and cardholder data |
-| Maintain an Information Security Policy | 12. Maintain a policy that addresses information security for all personnel |
+  Goals   PCI DSS Requirements  
+  ---   ---  
+  Build and Maintain a Secure Network and Systems   * 1. Install and maintain a firewall configuration to protect cardholder data * 2. Do not use vendor-supplied defaults for system passwords and other security parameters  
+  Protect Cardholder Data   * 3. Protect stored cardholder data * 4. Encrypt transmission of cardholder data across open, public networks  
+  Maintain a Vulnerability Management Program   5. all systems against malware and regularly update software or programs  
+  Implement Strong Control Measures   Protect anti- virus * 6. Develop and maintain secure systems and applications  
+  Access   * 7. Restrict access to cardholder data by business need to know * 8. Identify and authenticate access to system components * 9. Restrict physical access to cardholder data  
+  Regularly Monitor and Test Networks   10. Track and monitor all access to network resources and cardholder data  
+  Maintain an Information Security Policy   12. Maintain a policy that addresses information security for all personnel  
 
 11. Regularly test security systems and processes 
 
@@ -385,15 +385,15 @@ Illustration: Wikimedia Commons
 
 
 
-|  | Data Element | Storage Permitted | Render Stored Data Unreadable per Requirement 3.4 |
-| --- | --- | --- | --- |
-|  | Primary Account Number (PAN) | Yes | Yes |
-| Cardholder Data | Cardholder Name | Yes | No |
-|  | Service Code | Yes | No |
-|  | Expiration Date | Yes | No |
-|  | Full Track Data2 | No | Cannot store per Requirement 3.2 |
-| Sensitive Authentication Data1 | CAV2/CVC2/CVV2/CID3 | No | Cannot store per Requirement 3.2 |
-|  | PIN/PIN Block4 | No | Cannot store per Requirement 3.2 |
+     Data Element   Storage Permitted   Render Stored Data Unreadable per Requirement 3.4  
+  ---   ---   ---   ---  
+     Primary Account Number (PAN)   Yes   Yes  
+  Cardholder Data   Cardholder Name   Yes   No  
+     Service Code   Yes   No  
+     Expiration Date   Yes   No  
+     Full Track Data2   No   Cannot store per Requirement 3.2  
+  Sensitive Authentication Data1   CAV2/CVC2/CVV2/CID3   No   Cannot store per Requirement 3.2  
+     PIN/PIN Block4   No   Cannot store per Requirement 3.2  
 
 1 Sensitive authentication data must not be stored after authorization (even if encrypted) 
 
@@ -424,7 +424,7 @@ systems continue to not require anti-virus software.
 
 VULNERABILITY MANAGEMENT 
 
-| 
+  
 
 No.
 * 5.2 Ensure that all anti-virus mechanisms are kept current, perform periodic scans, generate audit logs, which are retained per PCI DSS Requirement 10.7.
@@ -704,11 +704,11 @@ Vulnerabilities are being discovered continually by malicious individuals and re
 
 
 
-| CVSS Score | Severity Level | Scan Results |
-| --- | --- | --- |
-| + 7.0 through 	+ 10.0 | High Severity | Fail |
-| + 4.0 through  		- 6.9 | Medium Severity | Fail |
-| 0.0 through  	+ 3.9 | Low Severity | Pass |
+  CVSS Score   Severity Level   Scan Results  
+  ---   ---   ---  
+  + 7.0 through 	+ 10.0   High Severity   Fail  
+  + 4.0 through  		- 6.9   Medium Severity   Fail  
+  0.0 through  	+ 3.9   Low Severity   Pass  
 
 “To demonstrate compliance, internal scans must not contain high-risk vulnerabilities in any component in the cardholder data environment. For external scans, none of those components may contain any vulnerability that has been assigned a Common Vulnerability Scoring System (CVSS) base score equal to or higher than 4.0.”
 * 11.4 Use network intrusion detection and/or intrusion prevention techniques to detect and/or prevent intrusions into the network. Monitor all traffic at the perimeter of the cardholder data environment as well as at critical points inside of the cardholder data environment, and alert personnel to suspected compromises. IDS/IPS engines, baselines, and signatures must be kept up to date.
@@ -851,24 +851,24 @@ The “SAQ” is a validation tool for merchants and service providers to report
 
 
 
-| SAQ | Description |
-| --- | --- |
-| A | Card-not-present merchants (e-commerce or mail/telephone-order) that have fully outsourced all cardholder data functions to PCI DSS compliant third-party service providers, with no electronic storage, processing, or transmission of any cardholder data on the merchant’s systems or premises. Not applicable to face-to-face channels. |
-| A-EP | E-commerce merchants who outsource all payment processing to PCI DSS validated third parties, and who have a website(s) that doesn’t directly receive cardholder data but that can impact the security of the payment transaction. No electronic storage, processing, or transmission of any cardholder data on the merchant’s systems or premises. Applicable only to e-commerce channels. |
-| B | Merchants using only: * • Imprint machines with no electronic cardholder data storage; and/or * • Standalone, dial-out terminals with no electronic cardholder data storage. |
+  SAQ   Description  
+  ---   ---  
+  A   Card-not-present merchants (e-commerce or mail/telephone-order) that have fully outsourced all cardholder data functions to PCI DSS compliant third-party service providers, with no electronic storage, processing, or transmission of any cardholder data on the merchant’s systems or premises. Not applicable to face-to-face channels.  
+  A-EP   E-commerce merchants who outsource all payment processing to PCI DSS validated third parties, and who have a website(s) that doesn’t directly receive cardholder data but that can impact the security of the payment transaction. No electronic storage, processing, or transmission of any cardholder data on the merchant’s systems or premises. Applicable only to e-commerce channels.  
+  B   Merchants using only: * • Imprint machines with no electronic cardholder data storage; and/or * • Standalone, dial-out terminals with no electronic cardholder data storage.  
 
 
 Not applicable to e-commerce channels. 
 
 
 
-| SAQ | Description |
-| --- | --- |
-| B-IP | Merchants using only standalone, PTS-approved payment terminals with an IP connection to the payment processor, with no electronic cardholder data storage. Not applicable to e-commerce channels. |
-| C-VT | Merchants who manually enter a single transaction at a time via a keyboard into an Internet-based virtual terminal solution that is provided and hosted by a PCI DSS validated third-party service provider. No electronic cardholder data storage. Not applicable to e-commerce channels. |
-| C | Merchants with payment application systems connected to the Internet, no electronic cardholder data storage. Not applicable to e-commerce channels. |
-| P2PE | Merchants using only hardware payment terminals that are included in and managed via a validated, PCI SSC-listed P2PE solution, with no electronic cardholder data storage. |
-| D | SAQ D for Merchants: All merchants not included in descriptions for the above SAQ types. SAQ D for Service Providers: All service providers defined by a payment card brand as |
+  SAQ   Description  
+  ---   ---  
+  B-IP   Merchants using only standalone, PTS-approved payment terminals with an IP connection to the payment processor, with no electronic cardholder data storage. Not applicable to e-commerce channels.  
+  C-VT   Merchants who manually enter a single transaction at a time via a keyboard into an Internet-based virtual terminal solution that is provided and hosted by a PCI DSS validated third-party service provider. No electronic cardholder data storage. Not applicable to e-commerce channels.  
+  C   Merchants with payment application systems connected to the Internet, no electronic cardholder data storage. Not applicable to e-commerce channels.  
+  P2PE   Merchants using only hardware payment terminals that are included in and managed via a validated, PCI SSC-listed P2PE solution, with no electronic cardholder data storage.  
+  D   SAQ D for Merchants: All merchants not included in descriptions for the above SAQ types. SAQ D for Service Providers: All service providers defined by a payment card brand as  
 
 Not applicable to e-commerce channels. 
 
@@ -923,11 +923,11 @@ Note: For some entities, these best practices are also requirements to ensure on
 
 
 
-| PCI Security Standards Council Web site: | Frequently Asked Questions (FAQs): | PCI SSC Blog: |
-| --- | --- | --- |
-| https://www.pcisecuritystandards.org | https://www.pcisecuritystandards.org/faqs | https://blog.pcisecuritystandards.org |
-| Membership Information | Webinars | Merchant Resources: |
-| https://www.pcisecuritystandards.org/get\_involved/join.php | https://www.pcisecuritystandards.org/program\_ training\_and\_qualification/webinars | https://www.pcissc.org/merchant |
+  PCI Security Standards Council Web site:   Frequently Asked Questions (FAQs):   PCI SSC Blog:  
+  ---   ---   ---  
+  https://www.pcisecuritystandards.org   https://www.pcisecuritystandards.org/faqs   https://blog.pcisecuritystandards.org  
+  Membership Information   Webinars   Merchant Resources:  
+  https://www.pcisecuritystandards.org/get\_involved/join.php   https://www.pcisecuritystandards.org/program\_ training\_and\_qualification/webinars   https://www.pcissc.org/merchant  
 
 Training 
 
@@ -969,11 +969,11 @@ The PCI DSS is a set of comprehensive requirements for enhancing security of pay
 
 
 
-| Goals | PCI DSS Requirements |
-| --- | --- |
-| Build and Maintain a Secure Network and Systems | * 1. Install and maintain a firewall configuration to protect cardholder data * 2. Do not use vendor-supplied defaults for system passwords and other security parameters |
-| Protect Cardholder Data | * 3. Protect stored cardholder data * 4. Encrypt transmission of cardholder data across open, public networks |
-| Maintain a Vulnerability Management Program | * 5. Protect all systems against malware and regularly update anti-virus software or programs * 6. Develop and maintain secure systems and applications |
-| Implement Strong Access Control Measures | * 7. Restrict access to cardholder data by business need to know * 8. Identify and authenticate access to system components * 9. Restrict physical access to cardholder data |
-| Regularly Monitor and Test Networks | 10. Track and monitor all access to network resources and cardholder data 11. Regularly test security systems and processes |
-| Maintain an Information Security Policy | 12. Maintain a policy that addresses information security for all personnel |
+Goals PCI DSS Requirements 
+  ---   ---  
+  Build and Maintain a Secure Network and Systems   * 1. Install and maintain a firewall configuration to protect cardholder data * 2. Do not use vendor-supplied defaults for system passwords and other security parameters  
+  Protect Cardholder Data   * 3. Protect stored cardholder data * 4. Encrypt transmission of cardholder data across open, public networks  
+  Maintain a Vulnerability Management Program   * 5. Protect all systems against malware and regularly update anti-virus software or programs * 6. Develop and maintain secure systems and applications  
+  Implement Strong Access Control Measures   * 7. Restrict access to cardholder data by business need to know * 8. Identify and authenticate access to system components * 9. Restrict physical access to cardholder data  
+  Regularly Monitor and Test Networks   10. Track and monitor all access to network resources and cardholder data 11. Regularly test security systems and processes  
+  Maintain an Information Security Policy   12. Maintain a policy that addresses information security for all personnel  
